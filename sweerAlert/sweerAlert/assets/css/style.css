@@ -1,22 +1,11 @@
-#weather-icon {
-    position: relative;
-  }
-  
-#weather-image {
-    position: relative;
-    width: 80px;
-    height: 80px;
-  }
-  
-
 #navbarNav{
-    background-color: red;
+    background-color: indianred;
     height: 90px;
 
 }
 
 #navbarNav1{
-    background-color: red;
+    background-color: indianred;
     position: absolute;
 }
 
@@ -31,13 +20,13 @@
 
 #centro{
 
-    background-color: white;
+    background-color: antiquewhite;
     position: relative;
 
 }
 
 .abajo {
-    background-color: red;
+    background-color: indianred;
     position: relative;
 }
 
@@ -122,6 +111,3 @@
     position: relative;
     left: 23px; 
 }
-
-
-  
