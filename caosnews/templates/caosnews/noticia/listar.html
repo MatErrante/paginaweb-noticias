@@ -1,0 +1,29 @@
+{% extends 'caosnews/base.html'%}
+{% block contenido %}
+
+
+
+<section class="container">
+    <div class="table-hover table-responsive mt-5">
+        <table class="table">
+            <tr>
+                <th>Categoria</th>
+                <th>Titulo</th>
+                <th>Fecha</th>
+                <th>Periodista</th>
+                <th>Opciones</th>
+            </tr>
+            {%for p in noticias%}
+            <tr>
+                <td>{{p.categoria}}</td> 
+                <td>{{p.titulo}}</td>
+                <td>{{p.fecha}}</td>
+                <td>{{p.periodista}}</td>
+                <td> <a href="{% url 'modificar-noticia' p.id %}" class="btn btn-warning">Modificar</a>
+                 <a href="{% url 'eliminar-noticia' p.id %}" class="btn btn-danger">Eliminar</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+</section>
+
+{% endblock %}""

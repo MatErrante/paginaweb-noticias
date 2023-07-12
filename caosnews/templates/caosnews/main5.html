@@ -1,0 +1,26 @@
+{% extends 'caosnews/base.html' %}
+{% block contenido %}
+{% load static %}
+
+    <div>
+        <!-- Links -->
+        <p>¡CONTACTANOS!&#128516;</p>
+        <fieldset>
+            <form action="formulario2.html">
+                <label>Nombre</label>
+                <input placeholder="Ingrese nombre..." id="cuadro"/>
+                <br />
+                <label>Apellido</label>
+                <input placeholder="Ingrese Apellido..."id="cuadro"/>
+                <br />
+                <label >Correo</label>
+                <input type="email" placeholder="Ingrese Correo..." id="cuadrocorreo"/> 
+                <br />
+                <label>Comentarios</label>
+                <textarea></textarea>
+                <button>Aceptar</button>
+            </form>
+        </fieldset>    
+    </div>
+
+{% endblock  %}

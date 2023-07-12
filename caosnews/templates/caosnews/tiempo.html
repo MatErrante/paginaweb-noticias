@@ -1,0 +1,15 @@
+{% extends 'caosnews/base.html' %}
+{% block contenido %}
+{% load static %}
+
+
+    <body>
+        <h1>Tiempo actual en {{ ciudad }}:</h1>
+        <p>Temperatura: {{ temperatura }}°C</p>
+        {% if icono_clima %}
+            <img src="{{ icono_clima }}" alt="Icono Clima">
+        {% endif %}
+    </body>
+    
+
+{% endblock  %}

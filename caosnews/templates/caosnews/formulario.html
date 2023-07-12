@@ -1,0 +1,56 @@
+{% extends 'caosnews/base.html' %}
+{% block contenido %}
+{% load static %}
+
+    <!--  DEFINICIÓN DE CONTENEDOR PRINCIPAL -->
+    <div class="container pt-5 px-5">
+        <!--  DEFINICIÓN DE ETIQUETA QUE MANEJARA LOS MENSAJES DE ERRORES (POR DEFECTO EL CONTENIDO ESTA OCULTO) -->
+        <div class="alert alert-danger d-none" role="alert" id="error">
+        </div>
+        <!--  DEFINICIÓN DE INPUT PARA INGRESAR CORREO ELECTRÓNICO -->
+        <div class="mb-3">
+            <label for="txtcorreo" class="form-label">Email</label>
+            <input type="email" class="form-control" id="txtcorreo" placeholder="name@example.com">
+        </div>
+        <!--  DEFINICIÓN DE INPUT PARA INGRESAR CORREO CONTRASEÑA -->
+        <div class="mb-3">
+            <label for="txtclave" class="form-label">Password</label>
+            <input type="password" class="form-control" id="txtclave" placeholder="Ingresa tu clave">
+        </div>
+        <!--  DEFINICIÓN DE BOTÓN PARA VALIDAR LOGIN -->
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" id="btnlogin">Iniciar Sesión</button>
+        </div>
+        
+        <div class="d-grid gap-2">
+            <submit class="btn btn-secondary" type="button2" id="btnCancel">Cancelar</submit>
+
+
+        </div>
+
+        <!--  DEFINICIÓN DE ETIQUETA QUE MANEJARA LOS MENSAJES DE EXITO (POR DEFECTO EL CONTENIDO ESTA OCULTO) -->
+        <div class="alert alert-success mt-2 d-none" role="alert" id="correcto">
+            Usuario correcto ! 
+        </div>
+
+        
+
+
+
+
+        
+    </div>
+
+
+
+    <!--  IMPORTACIÓN DE JS JQUERY -->
+    <script src="sweerAlert/sweerAlert/assets/js/jquery/jquery-3.6.4.min.js"></script>
+    <!--  IMPORTACIÓN DE JS DE BOOSTRAP -->
+    <script src="sweerAlert/sweerAlert/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  IMPORTACIÓN DE JS DE PERSONALIZADO -->
+    <script src="sweerAlert/sweerAlert/assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweerAlert/sweerAlert/assets/js/sweetAlert.js"></script>
+
+
+{% endblock  %} 
